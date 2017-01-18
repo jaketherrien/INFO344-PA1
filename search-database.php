@@ -192,6 +192,7 @@ if ($search == '') {
 		echo "<tr><td>First Name</td><td>Last Name</td><td>Team</td><td>GP</td><td>Min</td><td>FG-M</td><td>FG-A</td><td>FG-Pct</td><td>3PT-M</td><td>3PT-A</td><td>3PT-Pct</td><td>FT-M</td><td>FT-A</td><td>FT-Pct</td><td>RB-Off</td><td>RB-Def</td><td>RB-Tot</td><td>Ast</td><td>TO</td><td>Stl</td><td>Blk</td><td>PF</td><td>PPG</td></tr>";				
 		//loop through results and print statistics in a table
 		foreach ($results as $player) {
+			//create a new instance of player
 			$currPlayer = new Player($player);
 			echo "<tr><td>";			
 			echo $currPlayer->get_firstName();
